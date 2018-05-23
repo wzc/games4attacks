@@ -1,0 +1,38 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=.7in, right=.7in, top=.7in, bottom=.7in]{geometry}
+\usepackage{fourier,palatino}
+\usepackage[T1]{fontenc}
+\renewcommand{\baselinestretch}{1.12}
+\title{Economically Protecting Against Covert Timing Channel Attacks\\
+(Draft Technical Report)}
+\author{Wei Chen, Zhenyun Wen, and David Aspinall\\ 
+University of Edinburgh}
+\begin{document}
+\maketitle
+\begin{abstract}
+We investigate covert timing channel attacks and mitigations in SDN
+(software-defined networking) environment. In particular, we focus on Sneak-Peek
+attacks, in which an insider can leak information to an outsider by causing
+delays in the packet transmission between outsiders, where the insider and the
+outsider are in logically isolated networks but share common physical paths.
+
+We develop a game-theoretic model to formalise the interaction between attackers
+and defenders, considering: dynamic time thresholding for adaptive attacks, and
+random and selective path-hopping plans for proactive defence. This model is
+parameterised by available paths, hopping rate and cost, and traffic volume. Its
+equilibrium reveals the optimal strategy (the best hopping plan, the least
+hopping rate, and the least effect on normal traffic), for defenders to achieve
+a certain level reduction of covert channel capacity, so as to economically
+protect against covert timing channel attacks.
+
+We simulate these attacks in a SDN environment implemented in Mininet and test
+defence strategies with a variety of parameters. The experiment results validate
+the analytic analysis of our game-theoretic model: hopping at a low rate is
+enough to significantly mitigate covert timing channel attacks with few
+performance loss. 
+\end{abstract}
+\section{Introduction}
+\section{Overview}
+\section{A game-theoretical model}
+\section{Implementation and evaluation}
+\end{document}
