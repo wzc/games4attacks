@@ -1,8 +1,11 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[left=.7in, right=.7in, top=.7in, bottom=.7in]{geometry}
-\usepackage{fourier,palatino}
+\usepackage{xcolor,minted,fourier,palatino}
+\usemintedstyle{vs}
+\setminted[haskell]{fontfamily=tt}
 \usepackage[T1]{fontenc}
 \renewcommand{\baselinestretch}{1.12}
+\newcommand{\comment}[1]{\textcolor{red}{#1}}
 \title{Economically Protecting Against Covert Timing Channel Attacks\\
 (Draft Technical Report)}
 \author{Wei Chen, Zhenyun Wen, and David Aspinall\\ 
@@ -33,6 +36,6 @@ performance loss.
 \end{abstract}
 \section{Introduction}
 \section{Overview}
-\section{A game-theoretical model}
-\section{Implementation and evaluation}
+\section{A game-theoretic model}
+\section{Simulation and evaluation}
 \end{document}
